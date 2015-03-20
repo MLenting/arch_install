@@ -17,10 +17,10 @@
 #-------------------------------------------------------------------------------
 # Run this script after your first boot with archlinux (as root)
 
-if [[ -f `pwd`/sharedfuncs ]]; then
-  source sharedfuncs
+if [[ -f `pwd`/sharedfunctions ]]; then
+  source sharedfunctions
 else
-  echo "missing file: sharedfuncs"
+  echo "missing file: sharedfunctions"
   exit 1
 fi
 
