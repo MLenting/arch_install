@@ -1133,6 +1133,7 @@ install_desktop_environment(){
       install_themes "CINNAMON"
       #D-Bus interface for user account query and manipulation
       system_ctl enable accounts-daemon
+      KDE=0
       ;;
       #}}}
     2)
@@ -1149,6 +1150,7 @@ install_desktop_environment(){
       system_ctl enable lightdm
       #D-Bus interface for user account query and manipulation
       system_ctl enable accounts-daemon
+      KDE=0
       ;;
       #}}}
     3)
@@ -1163,6 +1165,7 @@ install_desktop_environment(){
       pause_function
       install_misc_apps "Enlightenment"
       install_themes "Enlightenment"
+      KDE=0
       ;;
       #}}}
     4)
@@ -1184,6 +1187,7 @@ install_desktop_environment(){
       system_ctl enable accounts-daemon
       #Improvements
       add_line "fs.inotify.max_user_watches = 524288" "/etc/sysctl.d/99-sysctl.conf"
+      KDE=0
       ;;
       #}}}
     5)
@@ -1311,6 +1315,7 @@ install_desktop_environment(){
       pause_function
       install_misc_apps "LXDE"
       install_themes "LXDE"
+      KDE=0
       ;;
       #}}}
     8)
@@ -1346,6 +1351,7 @@ install_desktop_environment(){
       install_themes "MATE"
       #D-Bus interface for user account query and manipulation
       system_ctl enable accounts-daemon
+      KDE=0
       ;;
       #}}}
     10)
@@ -1358,6 +1364,7 @@ install_desktop_environment(){
       pause_function
       install_display_manager
       install_themes "XFCE"
+      KDE=0
       ;;
       #}}}
     11)
@@ -1390,6 +1397,7 @@ install_desktop_environment(){
       config_xinitrc "startfluxbox"
       install_misc_apps "FLUXBOX"
       install_themes "FLUXBOX"
+      KDE=0
       pause_function
       ;;
       #}}}
