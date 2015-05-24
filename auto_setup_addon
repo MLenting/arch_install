@@ -120,7 +120,7 @@
     # 3) LightDM
     # 4) LXDM
     # 5) Slim
-    DISPLAY_MANAGER="4"
+    DISPLAY_MANAGER="5"
   #}}}
   # 1) Icons Themes
   # 2) GTK2|GTK3 Themes
@@ -129,7 +129,7 @@
     # 1) Moka
     # 2) Nitrux
     # 3) Numix
-    ICONS_THEMES="1"
+    ICONS_THEMES="3"
   #}}}
   #GTK THEMES {{{
     # 1) Numix
