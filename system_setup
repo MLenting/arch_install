@@ -2187,7 +2187,7 @@ install_internet_apps(){
                   aur_package_install "google-chrome"
                   ;;
                 2)
-                  package_install "chromium"
+                  package_install "chromium flashplugin"
                   ;;
                 3)
                   package_install "firefox firefox-i18n-$LOCALE_FF firefox-adblock-plus flashplugin "
@@ -2660,6 +2660,7 @@ install_video_apps(){
             echo " 9) $(menu_item "smplayer")"
             echo "10) $(menu_item "vlc")"
             echo "11) $(menu_item "xbmc")"
+            echo "12) $(menu_item "mplayer")"
             echo ""
             echo " b) BACK"
             echo ""
@@ -2701,6 +2702,9 @@ install_video_apps(){
                 11)
                   package_install "xbmc"
                   add_user_to_group ${username} xbmc
+                  ;;
+                12)
+                  package_install "mplayer"
                   ;;
                 "b")
                   break
@@ -3740,6 +3744,12 @@ install_extra(){
   do
     print_title "EXTRA"
     echo " 1) Global Menu $AUR"
+    echo " 2) Acroread $AUR"
+    echo " 3) Copy-Agent $AUR"
+    echo " 4) Eagle $AUR"
+    echo " 5) DraftSight $AUR"
+    echo " 6) AVR $AUR"
+    echo ""
     echo " b) BACK"
     echo ""
     EXTRA_OPTIONS+=" b"
@@ -3757,6 +3767,22 @@ install_extra(){
           else
             add_line "gtk-shell-shows-menubar = 1" "/home/${username}/.config/gtk-3.0/settings.ini"
           fi
+          ;;
+        2)
+          aur_package_install "acroread"
+          ;;
+        3)
+          aur_package_install "copy-agent"
+          ;;
+        4)
+          aur_package_install "eagle"
+          ;;
+        5)
+          aur_package_install "draftsight"
+          ;;
+        6)
+          aur_package_install "avr-libc"
+          aur_package_install "avrdude"
           ;;
         "b")
           break
