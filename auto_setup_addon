@@ -324,7 +324,7 @@
   # 1) Players
   # 2) Editors|Tools
   # 3) Codecs
-  AUDIO_OPTIONS="1-3"
+  AUDIO_OPTIONS="1-2"
   #PLAYERS {{{
     # 1) Amarok
     # 2) Audacious
@@ -339,7 +339,7 @@
     #11) Spotify
     #12) Timidity++
     #13) Tomahawk
-    AUDIO_PLAYER_OPTIONS="4"
+    AUDIO_PLAYER_OPTIONS=""
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Audacity
@@ -353,7 +353,7 @@
   # 1) Players
   # 2) Editors|Tools
   # 3) Codecs
-  VIDEO_OPTIONS="1-3"
+  VIDEO_OPTIONS="1-2"
   #PLAYERS {{{
     # 1) Audience
     # 2) Gnome Mplayer
@@ -367,7 +367,7 @@
     #10) VLC
     #11) XBMC
     #12) Mplayer
-    VIDEO_PLAYER_OPTIONS="12"
+    VIDEO_PLAYER_OPTIONS="11 12"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Arista
