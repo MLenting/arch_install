@@ -247,7 +247,7 @@
   # 8) Virtualbox
   # 9) Webmin
   #10) Wine
-  SYSTEMTOOLS_OPTIONS=""
+  SYSTEMTOOLS_OPTIONS="8"
 #}}}
 #GRAPHICS {{{
   # 1) Blender
@@ -366,7 +366,8 @@
     # 9) SMplayer
     #10) VLC
     #11) XBMC
-    VIDEO_PLAYER_OPTIONS=""
+    #12) Mplayer
+    VIDEO_PLAYER_OPTIONS="12"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Arista
@@ -537,6 +538,11 @@
 #}}}
 #EXTRA {{{
   # 1) Global Menu
-  EXTRA_OPTIONS=""
+  # 2) Acroread 
+  # 3) Copy-Agent $AUR"
+  # 4) Eagle $AUR"
+  # 5) DraftSight $AUR"
+  # 6) AVR $AUR"
+  EXTRA_OPTIONS="2-6"
 #}}}
 
