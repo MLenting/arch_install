@@ -462,7 +462,8 @@
       su - ${username} -c "
         [[ ! -d aui_packages ]] && mkdir aui_packages
         cd aui_packages
-        curl -o ${PKG}.tar.gz https://aur.archlinux.org/packages/${PKG:0:2}/${PKG}/${PKG}.tar.gz
+        curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/${PKG}.tar.gz
+#curl -o ${PKG}.tar.gz https://aur.archlinux.org/packages/${PKG:0:2}/${PKG}/${PKG}.tar.gz
         tar zxvf ${PKG}.tar.gz
         rm ${PKG}.tar.gz
         cd ${PKG}
